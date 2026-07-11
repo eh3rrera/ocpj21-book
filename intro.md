@@ -43,7 +43,7 @@ However, this book may not be the best starting point for complete beginners to 
 
 ## How This Book Is Organized
 
-The book is divided into 16 chapters and one appendix as follows:
+The book is divided into 14 chapters and one appendix as follows:
 
 - **Chapter 1. Utilizing Java Object-Oriented Approach - Part 1**. This chapter introduces fundamental concepts of object-oriented programming in Java, including classes, objects, and their lifecycle. It covers key language features such as keywords, comments, packages, access modifiers, fields, methods, constructors, initializers, and nested classes.
 
