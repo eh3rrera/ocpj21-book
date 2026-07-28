@@ -71,14 +71,14 @@ exam_objectives:
 
 **Explanation:**
 
-- **A)** The `extends` keyword is used in Java to create a subclass that inherits from a superclass.
-  - This option is correct. Subclasses can directly access `protected` and `public` members of their superclass. This accessibility allows subclasses to leverage and extend the functionality provided by the superclass while maintaining encapsulation of `private` members.
+- **A)** Subclasses can directly access the `public` and `protected` members of their superclass, and package-private members when they are in the same package.
+  - This option is correct. A subclass can use the `public` and `protected` members of its superclass directly. Package-private members work too, but only when the subclass is in the same package. `private` members stay off-limits, so the superclass must expose them through accessors.
 
 - **B)** In Java, a class can extend multiple classes to achieve multiple inheritance.
   - This option is incorrect. Java does not support multiple inheritance for classes. A class in Java can only extend one other class, preventing complications like the diamond problem and the complexity associated with multiple inheritance.
 
-- **C)** Subclasses can only access `protected` and `public` members of their superclass directly.
-  - This option is correct. The `extends` keyword is indeed used to define a subclass that inherits properties and behaviors from a single superclass, establishing an *is-a* relationship between the subclass and the superclass. This is a fundamental concept in Java's implementation of inheritance.
+- **C)** The `extends` keyword is used in Java to create a subclass that inherits from a superclass.
+  - This option is correct. `extends` creates a subclass that inherits the fields and methods of a single superclass, giving an is-a relationship between them.
 
 - **D)** A subclass in Java can directly access `private` members of its superclass.
   - This option is incorrect. A subclass cannot directly access `private` members of its superclass. Instead, it can access them through `public` or `protected` accessors provided by the superclass. This encapsulation principle ensures a controlled interaction with the superclass's state.
