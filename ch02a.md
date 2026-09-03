@@ -158,16 +158,16 @@ exam_objectives:
 **Explanation:**
 
 - **A)** The `super` keyword is used in the `Dog` constructor to call the superclass constructor.
-  - This optional is correct. In the `Dog` constructor, `super(name);` is used to call the superclass (`Animal`) constructor with the `name` parameter. This is necessary to initialize the `name` field inherited from the `Animal` class in the `Dog` instance.
+  - This option is correct. In the `Dog` constructor, `super(name);` is used to call the superclass (`Animal`) constructor with the `name` parameter. This is necessary to initialize the `name` field inherited from the `Animal` class in the `Dog` instance.
 
 - **B)** The `eat` method in the `Dog` class uses `super` to invoke the superclass's `eat` method.
-  - This optional is correct. The `eat` method in the `Dog` class calls `super.eat();` to invoke the `eat` method defined in the superclass (`Animal`). This allows the `Dog` class to extend the functionality of the `eat` method beyond what is defined in the superclass, demonstrating method overriding and use of `super` to access the overridden method.
+  - This option is correct. The `eat` method in the `Dog` class calls `super.eat();` to invoke the `eat` method defined in the superclass (`Animal`). This allows the `Dog` class to extend the functionality of the `eat` method beyond what is defined in the superclass, demonstrating method overriding and use of `super` to access the overridden method.
 
 - **C)** Removing the `super.eat();` call in the `Dog` class's `eat` method will prevent the `Dog` class from compiling.
-  - This optional is incorrect. Removing the `super.eat();` call from the `Dog` class's `eat` method would not prevent the class from compiling. It would simply mean that the `Dog` class's `eat` method no longer calls the superclass's `eat` method, altering the program's behavior but not its compilability.
+  - This option is incorrect. Removing the `super.eat();` call from the `Dog` class's `eat` method would not prevent the class from compiling. It would simply mean that the `Dog` class's `eat` method no longer calls the superclass's `eat` method, altering the program's behavior but not its compilability.
 
-- **D)** The `super` keyword can be used to access `static` methods from the superclass.
-  - This optional is incorrect. While `super` can indeed be used to access superclass methods, it's not specifically used or necessary for accessing static methods. Static methods belong to the class, not to instances, and should be invoked using the class name. `super` is used primarily for instance methods and constructors.
+- **D)** The `super` keyword can be used inside a `static` method of the `Dog` class to access members of `Animal`.
+  - This option is incorrect. `super` refers to the current instance viewed as the superclass type, so it may only appear where `this` is available. Inside a `static` method, a `static` initializer, or any other `static` context, there is no instance, and any use of `super` will result in a compile-time error.
 
 
 
